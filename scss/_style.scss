@@ -5,6 +5,7 @@
     position: relative;
 }
 
+
 .modal-box {
     @include position(absolute, 50%, 50%, translate(-50%, -50%));
 
@@ -35,6 +36,11 @@
         color: $font-color;
         padding: 6rem 8rem;
         letter-spacing: .1rem;
+
+        :checked + & {
+            display: block;
+            animation: 1.2s appear;
+        }
     }
 
     &__esc {
@@ -55,11 +61,10 @@
 
 }
 
-:checked + .modal-box__modal {
-    display: block;
-    animation: 1.2s appear;
 
-}
+
+
+
 
 
  
