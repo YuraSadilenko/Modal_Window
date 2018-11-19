@@ -3,3 +3,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: $body-bg;
 }
+
+@media (max-width: 76.8em) {
+    html {
+        font-size: 45%;
+    }
+
+}
