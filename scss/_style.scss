@@ -1,0 +1,65 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    font-size: 2rem;
+    position: relative;
+}
+
+.modal-box {
+    @include position(absolute, 50%, 50%, translate(-50%, -50%));
+
+    &__btn {
+        display: inline-block;
+        padding: 1rem 4rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+        border-radius: .4rem;
+        color: $font-color;
+        background-color: $bg-color;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $bg-hover;
+        }
+    }
+
+    &__input {
+        display: none;
+    }
+
+
+    &__modal {
+        display: none;
+        font-size: 2.5rem;
+        background-color: $bg-color;
+        color: $font-color;
+        padding: 6rem 8rem;
+        letter-spacing: .1rem;
+    }
+
+    &__esc {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: inline-block;
+        padding: 0 .5rem;
+        border: 1px solid $font-color;
+        color: $font-color;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $font-color;
+            color: $bg-color;
+        }
+    }
+
+}
+
+:checked + .modal-box__modal {
+    display: block;
+    animation: 1.2s appear;
+
+}
+
+
+ 
