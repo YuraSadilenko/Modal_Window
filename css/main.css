@@ -23,61 +23,57 @@ html {
     transform: translate(-50%, -50%) rotate(0);
     opacity: 1; } }
 
-.container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  font-size: 2rem;
-  overflow: hidden; }
-
 .center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.modal-box__btn {
-  display: inline-block;
-  padding: 1rem 4rem;
-  line-height: 3rem;
-  text-transform: uppercase;
-  border-radius: .4rem;
-  text-align: center;
-  color: #949da5;
-  background-color: #182c3d;
-  cursor: pointer; }
-  .modal-box__btn:hover {
-    background-color: #2b4b68; }
-
-.modal-box__input {
-  display: none; }
-
-.modal-box__modal {
-  display: none;
-  max-width: 65rem;
-  min-width: 30rem;
-  height: auto;
-  font-size: 2.5rem;
-  background-color: #182c3d;
-  color: #949da5;
-  padding: 6rem 8rem;
-  letter-spacing: .1rem; }
-  :checked + .modal-box__modal {
-    display: block;
-    animation: 1.2s appear; }
-  @media (max-width: 76.8em) {
-    .modal-box__modal {
-      width: 100%; } }
-
-.modal-box__esc {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  display: inline-block;
-  padding: 0 .5rem;
-  border: 1px solid #949da5;
-  color: #949da5;
-  cursor: pointer; }
-  .modal-box__esc:hover {
-    background-color: #949da5;
-    color: #182c3d; }
+.modal-box {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-size: 2rem;
+  overflow: hidden; }
+  .modal-box__btn {
+    display: inline-block;
+    padding: 1rem 4rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    border-radius: .4rem;
+    text-align: center;
+    color: #949da5;
+    background-color: #182c3d;
+    cursor: pointer; }
+    .modal-box__btn:hover {
+      background-color: #2b4b68; }
+  .modal-box__input {
+    display: none; }
+  .modal-box__modal {
+    display: none;
+    max-width: 65rem;
+    min-width: 30rem;
+    height: auto;
+    font-size: 2.5rem;
+    background-color: #182c3d;
+    color: #949da5;
+    padding: 6rem 8rem;
+    letter-spacing: .1rem; }
+    :checked + .modal-box__modal {
+      display: block;
+      animation: 1.2s appear; }
+    @media (max-width: 76.8em) {
+      .modal-box__modal {
+        width: 100%; } }
+  .modal-box__esc {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: inline-block;
+    padding: 0 .5rem;
+    border: 1px solid #949da5;
+    color: #949da5;
+    cursor: pointer; }
+    .modal-box__esc:hover {
+      background-color: #949da5;
+      color: #182c3d; }
